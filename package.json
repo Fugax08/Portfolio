@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Luca Di Francesco - Software Engineer Portfolio",
+  "private": true,
+  "packageManager": "pnpm@8.0.0",
+  "scripts": {
+    "dev": "npm -r --parallel run dev",
+    "build": "npm -r run build",
+    "type-check": "npm -r run type-check",
+    "lint": "npm -r run lint",
+    "test": "npm -r run test",
+    "test:coverage": "npm -r run test:coverage",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yml}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "typescript": "^5.3.0"
+    }
+  }
+}
